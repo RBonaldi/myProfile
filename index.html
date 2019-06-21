@@ -23,7 +23,7 @@
   <link href="css/chat.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="atualizarDataHora()">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -294,13 +294,13 @@
     <div class="row mb-3">
       <div class="col-9 themed-grid-col">
         <div class="popup-head-left pull-left">
-          <img src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" alt="iamgurdeeposahan"> 
+          <img src="img/ariel.jpg" alt="iamgurdeeposahan"> 
           Ariel
         </div>
       </div>
       <div class="col-3 themed-grid-col">
         <div class="pull-right">
-          <button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button"><i class="fa fa-times"></i></button>
+          <button data-widget="remove" id="removeClass" class="chat-header-button" type="button"><i class="fa fa-times"></i></button>
         </div>
       </div>
     </div>
@@ -308,52 +308,66 @@
 <div class="popup-messages">
   <div class="direct-chat-messages">
       <div class="chat-box-single-line">
-            <abbr class="timestamp">October 8th, 2015</abbr>
+            <abbr class="timestamp"><span id="datahora"></span></abbr>
       </div>
       <!-- Message. Default to the left -->
       <div class="direct-chat-msg doted-border">
         <div class="direct-chat-info clearfix">
           <span class="direct-chat-name pull-left">Ariel</span>
+          <span class="direct-chat-timestamp pull-right"> - 3.36 PM</span>
         </div>
         <!-- /.direct-chat-info -->
-        <img alt="message user image" src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+        <img alt="message user image" src="img/ariel.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
         <div class="direct-chat-text">
-          Hey bro, how’s everything going ?
-        </div>
-        <div class="direct-chat-info clearfix">
-          <span class="direct-chat-timestamp pull-right">3.36 PM</span>
-        </div>
-        <div class="direct-chat-info clearfix">
-          <span class="direct-chat-img-reply-small pull-left">
-          </span>
-          <span class="direct-chat-reply-name">Singh</span>
+          Hey bro, how’s everything going ?sdfdsHfdsfsdey bro, how’s everything going ?Hey bro, how’s everything going ?
         </div>
       </div>
-      <div class="chat-box-single-line">
-        <abbr class="timestamp">October 9th, 2015</abbr>
-      </div>
+
       <div class="direct-chat-msg doted-border">
         <div class="direct-chat-info clearfix">
-          <span class="direct-chat-name pull-left">Osahan</span>
+          <span class="direct-chat-name pull-left">Ariel</span>
+          <span class="direct-chat-timestamp pull-right"> - 3.36 PM</span>
         </div>
         <!-- /.direct-chat-info -->
-        <img alt="iamgurdeeposahan" src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+        <img alt="message user image" src="img/ariel.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
         <div class="direct-chat-text">
           Hey bro, how’s everything going ?
         </div>
+      </div>
+
+      <div class="direct-chat-msg doted-border">
         <div class="direct-chat-info clearfix">
-          <span class="direct-chat-timestamp pull-right">3.36 PM</span>
+          <span class="direct-chat-name pull-left">Ariel</span>
+          <span class="direct-chat-timestamp pull-right"> - 3.36 PM</span>
         </div>
+        <!-- /.direct-chat-info -->
+        <img alt="message user image" src="img/ariel.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+        <div class="direct-chat-text">
+          Hey bro, how’s everything going ?
+        </div>
+      </div>
+
+      <div class="direct-chat-msg doted-border">
         <div class="direct-chat-info clearfix">
-          <img alt="iamgurdeeposahan" src="http://bootsnipp.com/img/avatars/bcf1c0d13e5500875fdd5a7e8ad9752ee16e7462.jpg" class="direct-chat-img big-round">
-          <span class="direct-chat-reply-name">Singh</span>
+          <span class="direct-chat-name pull-left">Ariel</span>
+          <span class="direct-chat-timestamp pull-right"> - 3.36 PM</span>
+        </div>
+        <!-- /.direct-chat-info -->
+        <img alt="message user image" src="img/ariel.jpg" class="direct-chat-img"><!-- /.direct-chat-img -->
+        <div class="direct-chat-text">
+          Hey bro, how’s everything going ?
         </div>
       </div>
   </div>
 </div>
-  <div class="popup-messages-footer">
-  <textarea id="status_message" placeholder="Type a message..." rows="10" cols="40" name="message"></textarea>
+<div class="card-footer">
+  <div class="input-group">
+    <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+    <div class="input-group-append">
+      <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+    </div>
   </div>
+</div>
 </div>
 
   <!-- Bootstrap core JavaScript -->

@@ -12,7 +12,7 @@ body
     height: 415px;
     position: fixed;
     right: 70px;
-    width: 300px;
+    width: 360px;
     font-family: 'Open Sans', sans-serif;
 }
 .round.hollow {
@@ -46,7 +46,7 @@ body
     color: #7b7b7b;
     display: inline-table;
     font-size: 21px;
-    padding: 7px 10px;
+    padding: 5px 10px;
     width: 100%;
      font-family: Oswald;
 }
@@ -109,13 +109,12 @@ body
     padding: 0 0 0 1px;
     width: 21px;
 }
-
-
-
-
+.pull-right{
+    text-align: right;
+}
 
 .popup-box .popup-messages {
-    background: #3f9684 none repeat scroll 0 0;
+    background: #004263 none repeat scroll 0 0;
     height: 275px;
     overflow: auto;
 }
@@ -133,7 +132,7 @@ body
     text-align: center;
 }
 .popup-messages abbr.timestamp {
-    background: #3f9684 none repeat scroll 0 0;
+    background: #004263 none repeat scroll 0 0;
     color: #fff;
     padding: 0 11px;
 }
@@ -163,7 +162,7 @@ body
 }
 
 .popup-messages abbr.timestamp {
-    background: #3f9684  none repeat scroll 0 0;
+    background: #004263  none repeat scroll 0 0;
     color: #fff;
     padding: 0 11px;
 }
@@ -205,8 +204,7 @@ body
     margin: -9px 0 0 !important;
 }
 .popup-messages  .direct-chat-img {
-    border: 1px solid #fff;
-	background: #3f9684  none repeat scroll 0 0;
+	background: #004263  none repeat scroll 0 0;
     border-radius: 50%;
     float: left;
     height: 40px;
@@ -228,7 +226,7 @@ body
     height: 20px;
     margin: 0 8px;
     width: 20px;
-	background:#3f9684;
+	background:#004263;
 }
 
 .popup-messages .direct-chat-msg {
@@ -238,7 +236,6 @@ body
 
 .popup-messages .doted-border::after {
 	background: transparent none repeat scroll 0 0 !important;
-    border-right: 2px dotted #fff !important;
 	bottom: 0;
     content: "";
     left: 17px;
@@ -303,4 +300,8 @@ body
     margin: 5px 0 0 50px;
     padding: 5px 10px;
     position: relative;
+}
+
+.card-footer {
+    padding: .15rem 1.25rem !important;
 }
